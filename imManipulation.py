@@ -3,14 +3,6 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
 
-i = im.imread("bea1.jpg")
-
-# i = np.array(i)
-sh = i.shape
-# print (i)
-# plt.imshow(i)
-# plt.show()
-
 def rgb2yuv(i):
     r = i[:,:,0]
     g = i[:,:,1]
@@ -27,26 +19,35 @@ def yuv2rgb(Y,U,V):
     b = Y + 2.033 * U
     return r,g,b
 
-Y,U,V = rgb2yuv(i)
-r,g,b = yuv2rgb(Y,U,V)
+if __name__=='__main__':
+    i = im.imread("bea1.jpg")
 
-x = np.zeros(sh)
-x[:,:,0] = r
-x[:,:,1] = g
-x[:,:,2] = b
-# x = np.transpose(x,[1,2,0])
+    # i = np.array(i)
+    sh = i.shape
+    # print (i)
+    # plt.imshow(i)
+    # plt.show()
 
-for i in range(x.shape[0]):
-    for j in range(x.shape[1]):
-        for k in range(x.shape[2]):
-            if(x[i][j][k]<0):
-                x[i][j][k]=0
-            x[i][j][k] = round(x[i][j][k])
+    Y,U,V = rgb2yuv(i)
+    r,g,b = yuv2rgb(Y,U,V)
 
-print ("----------------")
+    x = np.zeros(sh)
+    x[:,:,0] = r
+    x[:,:,1] = g
+    x[:,:,2] = b
+    # x = np.transpose(x,[1,2,0])
 
-im.imsave("temp.jpg",x)
+    for i in range(x.shape[0]):
+        for j in range(x.shape[1]):
+            for k in range(x.shape[2]):
+                if(x[i][j][k]<0):
+                    x[i][j][k]=0
+                x[i][j][k] = round(x[i][j][k])
 
-# plt.imshow(x)
-# print (x)
-# plt.show()
+    print ("----------------")
+
+    im.imsave("temp.jpg",x)
+
+    # plt.imshow(x)
+    # print (x)
+    # plt.show()

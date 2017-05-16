@@ -6,10 +6,7 @@ class vgg16Net:
     def __init__(self, img, weights, sess):
         self.imgs = img
         self.convlayers()
-        # self.fc_layers()
-        # self.probs = tf.nn.softmax(self.fc3l)
         self.load_weights(weights, sess)
-
 
     def convlayers(self):
         self.parameters = []
@@ -40,14 +37,12 @@ class vgg16Net:
             out = tf.nn.bias_add(conv, biases)
             self.conv1_2 = tf.nn.relu(out, name=scope)
             self.parameters += [filter, biases]
-
         # pool1
         self.pool1 = tf.nn.max_pool(self.conv1_2,
                                ksize=[1, 2, 2, 1],
                                strides=[1, 2, 2, 1],
                                padding='SAME',
                                name='pool1')
-
         # conv2_1
         with tf.name_scope('conv2_1') as scope:
             filter = tf.Variable(tf.truncated_normal([3, 3, 64, 128], dtype=tf.float32,
@@ -58,7 +53,6 @@ class vgg16Net:
             out = tf.nn.bias_add(conv, biases)
             self.conv2_1 = tf.nn.relu(out, name=scope)
             self.parameters += [filter, biases]
-
         # conv2_2
         with tf.name_scope('conv2_2') as scope:
             filter = tf.Variable(tf.truncated_normal([3, 3, 128, 128], dtype=tf.float32,
@@ -69,15 +63,13 @@ class vgg16Net:
             out = tf.nn.bias_add(conv, biases)
             self.conv2_2 = tf.nn.relu(out, name=scope)
             self.parameters += [filter, biases]
-
         # pool2
         self.pool2 = tf.nn.max_pool(self.conv2_2,
                                ksize=[1, 2, 2, 1],
                                strides=[1, 2, 2, 1],
                                padding='SAME',
                                name='pool2')
-
-        # conv3_1
+        # conv3_
         with tf.name_scope('conv3_1') as scope:
             filter = tf.Variable(tf.truncated_normal([3, 3, 128, 256], dtype=tf.float32,
                                                      stddev=1e-1), name='weights')
@@ -87,7 +79,6 @@ class vgg16Net:
             out = tf.nn.bias_add(conv, biases)
             self.conv3_1 = tf.nn.relu(out, name=scope)
             self.parameters += [filter, biases]
-
         # conv3_2
         with tf.name_scope('conv3_2') as scope:
             filter = tf.Variable(tf.truncated_normal([3, 3, 256, 256], dtype=tf.float32,
@@ -98,7 +89,6 @@ class vgg16Net:
             out = tf.nn.bias_add(conv, biases)
             self.conv3_2 = tf.nn.relu(out, name=scope)
             self.parameters += [filter, biases]
-
         # conv3_3
         with tf.name_scope('conv3_3') as scope:
             filter = tf.Variable(tf.truncated_normal([3, 3, 256, 256], dtype=tf.float32,
@@ -109,7 +99,6 @@ class vgg16Net:
             out = tf.nn.bias_add(conv, biases)
             self.conv3_3 = tf.nn.relu(out, name=scope)
             self.parameters += [filter, biases]
-
         # pool3
         self.pool3 = tf.nn.max_pool(self.conv3_3,
                                ksize=[1, 2, 2, 1],
@@ -241,13 +230,16 @@ class vgg16Net:
             sess.run(self.parameters[i].assign(weights[k]))
 
     def return_layers(self,im,sess):
+        # self.load_weights("/vggWeights/vgg16_weights.npz", sess)
         c1 = np.array(im)
         c2,c3,c4,c5 = sess.run((self.conv1_2,self.conv2_2,self.conv3_3,self.conv4_3),feed_dict={self.imgs:im})
+        # c2,c3,c4 = sess.run((self.conv1_2,self.conv2_2,self.conv3_3),feed_dict={self.imgs:im})
         c2 = np.array(c2)
         c3 = np.array(c3)
         c4 = np.array(c4)
         c5 = np.array(c5)
         # print(c1.shape,c2.shape,c3.shape,c4.shape)
+        # return c1,c2,c3,c4
         return c1,c2,c3,c4,c5
 
 if __name__ == '__main__':
