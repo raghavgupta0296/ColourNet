@@ -7,13 +7,13 @@ People colour old black and white photographs using Photoshop. This model automa
 LabelMe Dataset - Coast & Beach, Open Country, Forest, Street images  
 
 # Input-Output
-RGB images converted to YUV format because the channels can be separated into intensity and chrominance </br>
-Y channel - Intensity - Input </br>  
-UV channels - Chrominance - Output </br> 
+RGB images converted to YUV format because the channels can be separated into intensity and chrominance</br>
+Y channel - Intensity - Input</br>  
+UV channels - Chrominance - Output</br>
 
 In case of test image: </br>
-Output input image Y is concatenated with output UV channels </br>
-YUV image -> RGB format - final output coloured image </br>
+Output input image Y is concatenated with output UV channels</br>
+YUV image -> RGB format - final output coloured image</br>
 
 # Model
 ### The breakdown of the model  
@@ -26,8 +26,8 @@ YUV image -> RGB format - final output coloured image </br>
 Euclidean distance between each pixel value in:
 1. Predicted UV channels and Real Output UV channels
 2. Guassian Blur of Predicted UV channels and Guassian Blur of Real Output UV channels (Kernel size 3)
-3. Guassian Blur of Predicted UV channels and Guassian Blur of Real Output UV channels (Kernel size 5)
-Error = Average of 1,2,3 </br>
+3. Guassian Blur of Predicted UV channels and Guassian Blur of Real Output UV channels (Kernel size 5)</br>
+Error = Average of 1,2,3
 
 Optimizer - Adam
 
