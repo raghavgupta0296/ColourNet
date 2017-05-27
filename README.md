@@ -33,8 +33,8 @@ Optimizer - Adam
 
 # Examples
 <p align="left">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="256" height="256" src="http://www.fillmurray.com/460/300">
 </p>
 <p align="right">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="256" height="256" src="http://www.fillmurray.com/460/300">
 </p>
