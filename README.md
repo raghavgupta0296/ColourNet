@@ -32,8 +32,7 @@ Error = Average of 1,2,3
 Optimizer - Adam
 
 # Examples
-<p align="left">
-  <img width="256" height="256" src="http://www.fillmurray.com/460/300">
-<p align="right">
-  <img width="256" height="256" src="http://www.fillmurray.com/460/300">
+<p align="center">
+  <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="256" title="Github Logo">
+  <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="256" title="Github Logo">
 </p>
