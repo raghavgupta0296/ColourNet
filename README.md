@@ -7,8 +7,8 @@ People colour old black and white photographs using Photoshop. This model automa
 LabelMe Dataset - Coast & Beach, Open Country, Forest, Street images  
 
 # Input-Output
-RGB images converted to YUV format because the channels can be separated into intensity and chrominance</br>
-Y channel - Intensity - Input</br>  
+RGB images converted to YUV format because the channels can be separated into intensity and chrominance </br>
+Y channel - Intensity - Input  
 UV channels - Chrominance - Output</br>
 
 In case of test image: </br>
@@ -32,3 +32,9 @@ Error = Average of 1,2,3
 Optimizer - Adam
 
 # Examples
+<p align="left">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
+<p align="right">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
