@@ -1,4 +1,4 @@
-# ColourNet <span style="color:blue">some *This is Blue italic.* text</span>
+# ColourNet 
 Auto Colourization of Grayscale Images using Deep Convolutional Neural Networks  
 
 People colour old black and white photographs using Photoshop. This model automates the colourization process without human work or intervention.   
