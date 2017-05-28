@@ -30,7 +30,7 @@ Euclidean distance between each pixel value in:
 3. Guassian Blur of Predicted UV channels and Guassian Blur of Real Output UV channels (Kernel size 5)</br>
 Error = Average of 1,2,3
 
-Optimizer - Adam
+Optimizer - Adam lr=0.001 epsilon=e-08
 
 # References
 [http://tinyclouds.org/colorize/]</br>
