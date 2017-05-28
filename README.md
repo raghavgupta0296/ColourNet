@@ -32,8 +32,81 @@ Error = Average of 1,2,3
 
 Optimizer - Adam
 
+# References
+[http://tinyclouds.org/colorize/]
+[http://cs231n.stanford.edu/reports/2016/pdfs/205_Report.pdf]
+[https://arxiv.org/abs/1411.5752]
+
 # Examples
 <p align="center">
   <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_1.png" width="256" height="256" title="Original Image">
   <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_1.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_2.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_2.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_3.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_3.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_5.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_5.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_6.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_6.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_7.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_7.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_8.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_8.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_19.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_19.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_20.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_20.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_21.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_21.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_23.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_23.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_24.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_24.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_29.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_29.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_13.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_13.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_18.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_18.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_22.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_22.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_25.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_25.png" width="256" height="256" title="Coloured Image">
+</p>
+<p align="center">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_27.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_27.png" width="256" height="256" title="Coloured Image">
 </p>
