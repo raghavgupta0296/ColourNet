@@ -34,7 +34,7 @@ Optimizer - Adam
 
 # References
 [http://tinyclouds.org/colorize/]</br>
-[http://cs231n.stanford.edu/reports/2016/pdfs/205_Report.pdf]
+[http://cs231n.stanford.edu/reports/2016/pdfs/205_Report.pdf]</br>
 [https://arxiv.org/abs/1411.5752]
 
 # Examples
