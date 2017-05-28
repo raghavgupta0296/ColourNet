@@ -59,54 +59,54 @@ Optimizer - Adam
   <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_6.png" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_7.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_7.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_7.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_7.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_8.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_8.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_8.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_8.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_19.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_19.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_19.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_19.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_20.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_20.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_20.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_20.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_21.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_21.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_21.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_21.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_23.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_23.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_23.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_23.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_24.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_24.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_24.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_24.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_29.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_29.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_29.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_29.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_13.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_13.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_13.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_13.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_18.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_18.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_18.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_18.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_22.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_22.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_22.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_22.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_25.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_25.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_25.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_25.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_27.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_27.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_27.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_27.jpg" width="256" height="256" title="Coloured Image">
 </p>
