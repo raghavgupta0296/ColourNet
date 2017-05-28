@@ -34,6 +34,6 @@ Optimizer - Adam
 
 # Examples
 <p align="center">
-  <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="256" height="256" title="Github Logo">
-  <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="256" height="256" title="Github Logo2">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_1.png" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_1.png" width="256" height="256" title="Coloured Image">
 </p>
