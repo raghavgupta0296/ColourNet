@@ -3,8 +3,8 @@ Auto Colourization of Grayscale Images using Deep Convolutional Neural Networks
 
 People colour old black and white photographs using Photoshop. This model automates the colourization process without human work or intervention.   
 
-# Dataset and Images
-LabelMe Dataset - Coast & Beach, Open Country, Forest, Street images  
+# Dataset
+LabelMe Dataset - Coast & Beach, Open Country, Forest, Street images; 256x256 ~1k images 
 
 # Input-Output
 RGB images converted to YUV format because the channels can be separated into intensity and chrominance </br>
