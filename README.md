@@ -12,7 +12,7 @@ Y channel - Intensity - Input
 UV channels - Chrominance - Output</br>
 
 In case of test image: </br>
-Output input image Y is concatenated with output UV channels</br>
+Input channel Y is concatenated with predicted output UV channels</br>
 YUV image -> RGB format - final output coloured image</br>
 
 # Model
@@ -21,6 +21,7 @@ YUV image -> RGB format - final output coloured image</br>
 2. Parallel inverse convolution layers to bring those extracted layers in the same ht-wid dimension
 3. Concatenating the layers to form a hypercolumn. It contains a lot of information about the input image.
 4. A convolutional network taking in the hypercolumn and producing the output channels.
+5. Used Batch Normalisation and ReLu in between layers
 
 # Error & Optimization
 Euclidean distance between each pixel value in:
