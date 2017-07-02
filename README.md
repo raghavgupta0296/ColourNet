@@ -39,8 +39,8 @@ Optimizer - Adam lr=0.001 epsilon=e-08
 
 # Examples
 <p align="center">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_30.png" width="256" height="256" title="Original Image">
-  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_30.png" width="256" height="256" title="Coloured Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_30.jpg" width="256" height="256" title="Original Image">
+  <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/coloured_30.jpg" width="256" height="256" title="Coloured Image">
 </p>
 <p align="center">
   <img src="https://github.com/raghavgupta0296/ColourNet/blob/master/Sample%20Outputs/original_1.png" width="256" height="256" title="Original Image">
