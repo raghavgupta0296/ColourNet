@@ -13,6 +13,7 @@ os.makedirs("./output/ims")
 index = 0
 
 def chooose_ims(batch_size):
+    # make batches of chrominance and intensity channels for training    
     global index
     I1 = np.ndarray(shape=[1,256,256,1])
     U1 = np.ndarray(shape=[1,256,256,1])
@@ -55,12 +56,14 @@ Y1 = tf.placeholder(tf.float32,[None,256,256,2])
 def ini_wt(shape):
     initial = tf.truncated_normal(shape,stddev=0.001)
     return tf.Variable(initial)
+# to deconv the vgg extracted tensors to same size
 Wup3 = ini_wt([3,3,128,128])
 c3_ = tf.nn.conv2d_transpose(C3,Wup3,[batch_size,256,256,128],strides=[1,2,2,1],padding='SAME')
 Wup4 = ini_wt([3,3,256,256])
 c4_ = tf.nn.conv2d_transpose(C4,Wup4,[batch_size,256,256,256],strides=[1,4,4,1],padding='SAME')
 Wup5 = ini_wt([3,3,512,512])
 c5_ = tf.nn.conv2d_transpose(C5,Wup5,[batch_size,256,256,512],strides=[1,8,8,1],padding='SAME')
+# create the hyercolumn and conv to chrominance output channels 
 hypercolumn = tf.concat([C1,C2,c3_,c4_,c5_],3)
 Ws1 = ini_wt([3,3,963,128])
 y = tf.nn.conv2d(hypercolumn,Ws1,strides=[1,1,1,1],padding='SAME')
@@ -79,6 +82,7 @@ def guassianBlurLoss(y,Y1):
     y_v = tf.expand_dims(y[:,:,:,1],3)
     Y1_V = tf.expand_dims(Y1[:,:,:,1],3)
 
+    # guassian blur to make the loss smoother (for the edges in the images)     
     u1_blur3 = GuassianBlur.guassianBlur(y_u,3)
     u2_blur3 = GuassianBlur.guassianBlur(Y1_U,3)
     v1_blur3 = GuassianBlur.guassianBlur(y_v,3)
@@ -106,8 +110,6 @@ with tf.control_dependencies(update_ops):
 initialize_vars = tf.global_variables_initializer()
 saver = tf.train.Saver()
 
-fno = 1
-
 sess.run(initialize_vars)
 vgg = vggNet.vgg16Net(X, './vggWeights/vgg16_weights.npz', sess)
 
@@ -116,6 +118,7 @@ saver.restore(sess, "./model.ckpt")
 def make_batch(sess,X,I_,U_,V_):
     I_ = np.concatenate((I_, I_, I_), axis=3)  # 1091,256,256,3
     UV_ = np.concatenate((U_, V_), axis=3)
+    # extract the tensors from vgg from which the hypercolumn has to be created     
     c1, c2, c3, c4, c5 = vgg.return_layers(I_,sess)
     return c1,c2,c3,c4,c5,UV_
 
