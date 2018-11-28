@@ -55,9 +55,6 @@ Y1 = tf.placeholder(tf.float32,[None,256,256,2])
 def ini_wt(shape):
     initial = tf.truncated_normal(shape,stddev=0.001)
     return tf.Variable(initial)
-# c3_ = tf.image.resize_images(C3,(256,256))
-# c4_ = tf.image.resize_images(C4,(256,256))
-# c5_ = tf.image.resize_images(C5,(256,256))
 Wup3 = ini_wt([3,3,128,128])
 c3_ = tf.nn.conv2d_transpose(C3,Wup3,[batch_size,256,256,128],strides=[1,2,2,1],padding='SAME')
 Wup4 = ini_wt([3,3,256,256])
@@ -132,56 +129,18 @@ for n_epochs in range(2000):
 
         print(" loss : ", loss_val)
 
-    # if n_epochs%5 == 0:
+    if n_epochs%20 == 0:
         saver.save(sess,"./output/tmp/model.ckpt")
         print(" Model Saved ")
-        # For Test
-        # image1 = im.imread("unnamed.jpg",mode='RGB')
-        # image1 = im.imresize(image1,(256,256,3))
-        # image1 = image1/255
-        # I1,U1,V1 = imManipulation.rgb2yuv(image1)
-        # I1 = np.reshape(I1, (1, 256, 256, 1))
-        # U1 = np.reshape(U1,(1,256,256,1))
-        # V1 = np.reshape(V1,(1,256,256,1))
-        # c1,c2,c3,c4,c5,UV = make_batch(sess,X,I1,U1,V1)
-        # loss_val, uv_val = sess.run([loss, y], feed_dict={C1: c1, C2: c2, C3: c3, C4: c4, C5: c5, Y1: UV})
-        # u_val1 = uv_val[0, :, :, 0]
-        # v_val1 = uv_val[0, :, :, 1]
-        # I1 = np.reshape(I1[0], (256, 256))
-        # r1, g1, b1 = imManipulation.yuv2rgb(I1, u_val1, v_val1)
-        # r1 = np.reshape(r1, (256, 256, 1))
-        # g1 = np.reshape(g1, (256, 256, 1))
-        # b1 = np.reshape(b1, (256, 256, 1))
-        # imp1 = np.concatenate((r1, g1, b1), axis=2)
-        # imp1 = imp1 * 255
-        # print(imp1, end=" ")
-        # im.imsave("./output/ims/colouredImage%d.jpg" % fno, imp1)
-        # fno += 1
+   
         image1 = im.imread("unnamed.jpg", mode='RGB')
-        image2 = im.imread("unnamed2.jpg", mode='RGB')
-        image3 = im.imread("unnamed3.jpg", mode='RGB')
         image1 = im.imresize(image1, (256, 256, 3))
-        image2 = im.imresize(image2, (256, 256, 3))
-        image3 = im.imresize(image3, (256, 256, 3))
         image1 = image1 / 255
-        image2 = image2 / 255
-        image3 = image3 / 255
         I1, U1, V1 = imManipulation.rgb2yuv(image1)
-        I2, U2, V2 = imManipulation.rgb2yuv(image2)
-        I3, U3, V3 = imManipulation.rgb2yuv(image3)
         I1 = np.reshape(I1, (1, 256, 256, 1))
-        I2 = np.reshape(I2, (1, 256, 256, 1))
-        I3 = np.reshape(I3, (1, 256, 256, 1))
         U1 = np.reshape(U1, (1, 256, 256, 1))
-        U2 = np.reshape(U2, (1, 256, 256, 1))
-        U3 = np.reshape(U3, (1, 256, 256, 1))
         V1 = np.reshape(V1, (1, 256, 256, 1))
-        V2 = np.reshape(V2, (1, 256, 256, 1))
-        V3 = np.reshape(V3, (1, 256, 256, 1))
-        I0 = np.concatenate((I1, I2, I3), axis=0)
-        U0 = np.concatenate((U1, U2, U3), axis=0)
-        V0 = np.concatenate((V1, V2, V3), axis=0)
-        c1, c2, c3, c4, c5, UV = make_batch(sess, X, I0, U0, V0)
+        c1, c2, c3, c4, c5, UV = make_batch(sess, X, I1, U1, V1)
         loss_val, uv_val = sess.run([loss, y], feed_dict={C1: c1, C2: c2, C3: c3, C4: c4, C5: c5, Y1: UV, is_training:False})
         u_val1 = uv_val[0, :, :, 0]
         v_val1 = uv_val[0, :, :, 1]
@@ -193,29 +152,4 @@ for n_epochs in range(2000):
         imp1 = np.concatenate((r1, g1, b1), axis=2)
         imp1 = imp1 * 255
         print(imp1, end=" ")
-        im.imsave("./output/ims/colouredImage%d.jpg" % fno, imp1)
-        fno += 1
-        u_val2 = uv_val[1, :, :, 0]
-        v_val2 = uv_val[1, :, :, 1]
-        I2 = np.reshape(I2[0], (256, 256))
-        r2, g2, b2 = imManipulation.yuv2rgb(I2, u_val2, v_val2)
-        r2 = np.reshape(r2, (256, 256, 1))
-        g2 = np.reshape(g2, (256, 256, 1))
-        b2 = np.reshape(b2, (256, 256, 1))
-        imp2 = np.concatenate((r2, g2, b2), axis=2)
-        imp2 = imp2 * 255
-        print(imp2, end=" ")
-        im.imsave("./output/ims/colouredImage%d.jpg" % fno, imp2)
-        fno += 1
-        u_val3 = uv_val[2, :, :, 0]
-        v_val3 = uv_val[2, :, :, 1]
-        I3 = np.reshape(I3[0], (256, 256))
-        r3, g3, b3 = imManipulation.yuv2rgb(I3, u_val3, v_val3)
-        r3 = np.reshape(r3, (256, 256, 1))
-        g3 = np.reshape(g3, (256, 256, 1))
-        b3 = np.reshape(b3, (256, 256, 1))
-        imp3 = np.concatenate((r3, g3, b3), axis=2)
-        imp3 = imp3 * 255
-        print(imp3, end=" ")
-        im.imsave("./output/ims/colouredImage%d.jpg" % fno, imp3)
-        fno += 1
+        im.imsave("./output/ims/colouredImage.jpg", imp1)        
