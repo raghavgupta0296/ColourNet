@@ -154,5 +154,5 @@ for n_epochs in range(2000):
         b1 = np.reshape(b1, (256, 256, 1))
         imp1 = np.concatenate((r1, g1, b1), axis=2)
         imp1 = imp1 * 255
-        print(imp1, end=" ")
+        print(imp1)
         im.imsave("./output/ims/colouredImage.jpg", imp1)        
